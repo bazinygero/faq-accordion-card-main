@@ -39,7 +39,7 @@ h3 {
 
 .card {
 	background: hsl(0, 0%, 100%);
-	border-radius: 2rem;
+	border-radius: 1.75rem;
 	max-width: 56rem;
 	padding: 2.875rem 1.5rem;
 	background-image: url('/images/bg-pattern-mobile.svg');
@@ -92,10 +92,17 @@ h3 {
 	font-size: 0.875rem;
 	font-family: 'Kumbh Sans', sans-serif;
 	text-align: left;
+	color: var(--very-dark-graish-blue);
+}
+
+.accordion__question:hover {
+	color: var(--copy-red);
+	cursor: pointer;
 }
 
 .accordion__question.open {
 	font-weight: 700;
+	color: var(--copy-blue);
 }
 
 .accordion__question::after {
@@ -125,6 +132,7 @@ h3 {
 	font-size: 0.75rem;
 	line-height: 1.4;
 	padding-bottom: 1rem;
+	color: var(--dark-grayish-blue);
 }
 
 .accordion__collapse {
@@ -156,7 +164,7 @@ h3 {
 		padding: 4.375rem 6.25rem 4.375rem 0;
 		background-image: url('/images/bg-pattern-desktop.svg');
 		background-size: 45%;
-		background-position: -13% center;
+		background-position: -20% center;
 	}
 
 	.card__box {
@@ -190,4 +198,8 @@ h3 {
 	.card__text {
 		padding-top: 0;
 	}
+}
+
+footer {
+	display: none;
 }
